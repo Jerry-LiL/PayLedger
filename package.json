@@ -1,0 +1,11 @@
+{
+  "name": "payledger",
+  "private": true,
+  "scripts": {
+    "start:api": "npm --prefix backend run start:dev",
+    "start:web": "npm --prefix frontend run dev",
+    "build": "npm --prefix backend run build && npm --prefix frontend run build",
+    "lint": "npm --prefix backend run lint && npm --prefix frontend run lint",
+    "test": "npm --prefix backend test && npm --prefix backend run test:e2e"
+  }
+}
